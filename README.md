@@ -31,6 +31,7 @@ Focused on Code optimization, reusability, and scalability.
 - Created `Engagement Groups - Page Container` and `Engagement Groups - Card Component` with the components such as  `Card`, `Dialog`, and other modules in `Radix UI`.
 - Designed the Interfaces such as `group` and `formData` to handle the Card.
 - Used `Tailwind.css` and `Radix UI Colors` to design the UI.
+- By `WAI-ARIA` such as `aria-label` and `tab-index`, updated the components more accessible and user-friendly for people with disabilities. 
 
 
 ### Instruction
