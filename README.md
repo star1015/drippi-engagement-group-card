@@ -1,4 +1,4 @@
-# Drippi Test Project - node v18.17.1 & npm v9.6.7
+# Drippi Test Project
 
 ### **The task**
 
@@ -34,6 +34,7 @@ Focused on Code optimization, reusability, and scalability.
 
 
 ### Instruction
+`node v18.17.1 & npm v9.6.7`
 1. Install the relevant version of node and nvm.
 - https://github.com/nvm-sh/nvm (for Linux and macOS) and https://github.com/coreybutler/nvm-windows (for Windows).
 - `nvm install 18.17.1`
