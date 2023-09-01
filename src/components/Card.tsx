@@ -3,6 +3,7 @@ import cls from 'classnames'
 import { Primitive } from '@radix-ui/react-primitive'
 import type * as Radix from '@radix-ui/react-primitive'
 
+// CARD ELEMENT
 const CARD_NAME = 'Card'
 type CardElement = React.ElementRef<typeof Primitive.div>
 type PrimitiveCardProps = Radix.ComponentPropsWithoutRef<typeof Primitive.div>
@@ -36,6 +37,7 @@ const Card = React.forwardRef<CardElement, CardProps>((props, forwardedRef) => {
 })
 Card.displayName = CARD_NAME
 
+// CARD CONTENT
 const CARD_CONTENT_NAME = 'CardContent'
 type CardContentElement = React.ElementRef<typeof Primitive.div>
 type PrimitiveCardContentProps = Radix.ComponentPropsWithoutRef<
@@ -62,6 +64,7 @@ const CardContent = React.forwardRef<CardContentElement, CardContentProps>(
 )
 CardContent.displayName = CARD_CONTENT_NAME
 
+// CARD ACTION 
 const CARD_ACTIONS_NAME = 'CardActions'
 type CardActionsElement = React.ElementRef<typeof Primitive.div>
 type PrimitiveCardActionsProps = Radix.ComponentPropsWithoutRef<

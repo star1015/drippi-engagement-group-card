@@ -40,7 +40,8 @@ export const EngagePage = () => {
     // Keep the console here to trigger the groupID for now.
     // ...
     console.log('Selected Group ID', selectedGroupID, e)
-
+    
+    // close after asynchronous form submission
     wait().then(() => setVisiblePopup(false))
     e.preventDefault()
 
@@ -63,10 +64,10 @@ export const EngagePage = () => {
           <Dialog.Overlay className="dialog-overlay" />
           <Dialog.Content className="dialog-content bg-dark-base-300">
             <Dialog.Title className="dialog-title text-dark-secondary-content">
-              Join Group Application
+              Join Group
             </Dialog.Title>
             <Dialog.Description className="dialog-description">
-              why should we accept you to the group?
+              Why should we accept you to the group?
             </Dialog.Description>
             <form onSubmit={handleSubmit}>
               <fieldset className="dialog-fieldset">

@@ -21,6 +21,7 @@ export const GroupCard: React.FC<GroupCardProps> = ({ group, handlePopup }) => {
       )}
       <Card.Content>
         <div className="mb-4 flex flex-row justify-between">
+          {/* Header */}
           <div>
             <div className="text-xl font-bold">{group.name}</div>
             <p
@@ -51,6 +52,7 @@ export const GroupCard: React.FC<GroupCardProps> = ({ group, handlePopup }) => {
             )}
           </div>
         </div>
+        {/*  Membership Criteria */}
         <div className="text-center">
           <p
             className="mb-2 border border-solid border-current text-sm text-dark-secondary-content"
