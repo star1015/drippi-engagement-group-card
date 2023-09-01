@@ -1,5 +1,4 @@
 export type FormData = {
-    description: string
-    groupId: string,
-  }
-  
+  description: string
+  groupId: number
+}

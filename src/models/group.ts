@@ -1,5 +1,5 @@
 export type Group = {
-  id: string
+  id: number
   type: 'private' | 'public'
   mediaUrl?: string
   owner: string

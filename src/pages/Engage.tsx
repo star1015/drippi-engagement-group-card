@@ -1,19 +1,19 @@
 import { useState, ChangeEvent, FormEvent, useEffect } from 'react'
-import { GroupCard } from '../components/GroupCard'
-import * as Dialog from '@radix-ui/react-dialog'
 import { Cross2Icon } from '@radix-ui/react-icons'
-import { groups } from '../mocks/groupsMockData'
+import * as Dialog from '@radix-ui/react-dialog'
 import { FormData } from '../models'
+import { GroupCard } from '../components/GroupCard'
+import { groups } from '../mocks/groupsMockData'
 import '../styles/popup.css'
 
 const wait = () => new Promise((resolve) => setTimeout(resolve, 500))
 
 export const EngagePage = () => {
   const [visiblePopup, setVisiblePopup] = useState<boolean>(false)
-  const [selectedGroupID, setSelectedGroupID] = useState<string>('')
+  const [selectedGroupID, setSelectedGroupID] = useState<number>(0)
   const [formData, setFormData] = useState<FormData>({
     description: '',
-    groupId: ''
+    groupId: 0
   })
 
   useEffect(() => {
@@ -23,7 +23,7 @@ export const EngagePage = () => {
     })
   }, [selectedGroupID])
 
-  const handlePopup = (groupId: string) => {
+  const handlePopup = (groupId: number) => {
     setVisiblePopup(true)
     setSelectedGroupID(groupId)
   }
@@ -37,7 +37,8 @@ export const EngagePage = () => {
   }
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    // Keep the console here to trigger the groupID for now.
+    // Keep the consoles here to trigger the data for now.
+    // ---------------------------------------------------
     // ...
     console.log('Selected Group ID', selectedGroupID, e)
     

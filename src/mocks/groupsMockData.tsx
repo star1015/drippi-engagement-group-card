@@ -2,7 +2,7 @@ import { Group } from '../models'
 
 export const groups: Group[] = [
   {
-    id: 'group1',
+    id: 1,
     memberCount: '1.2K',
     name: 'Group 1',
     mediaUrl: 'https://picsum.photos/id/27/400/200',
@@ -20,7 +20,7 @@ export const groups: Group[] = [
     },
   },
   {
-    id: 'group2',
+    id: 2,
     memberCount: '0.6M',
     name: 'Group 2',
     mediaUrl: 'https://picsum.photos/id/7/400/200',
@@ -38,7 +38,7 @@ export const groups: Group[] = [
     },
   },
   {
-    id: 'group3',
+    id: 3,
     memberCount: '10.3K',
     name: 'Group 3',
     mediaUrl: 'https://picsum.photos/id/158/400/200',
@@ -56,7 +56,7 @@ export const groups: Group[] = [
     },
   },
   {
-    id: 'group4',
+    id: 4,
     memberCount: '1.2M',
     name: 'Group 4',
     mediaUrl: 'https://picsum.photos/id/128/400/200',
@@ -73,7 +73,7 @@ export const groups: Group[] = [
     },
   },
   {
-    id: 'group5',
+    id: 5,
     memberCount: '1.2M',
     name: 'Group 5',
     owner: 'Shelia Edwards',
